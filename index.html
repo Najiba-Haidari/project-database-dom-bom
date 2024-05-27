@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Let's Add Your Coding Projects Here!</h1>
+    </header>
+    <div id="main-container">
+      <aside id="aside">
+        <form name="myForm" id="project-form">
+          <h2>Add Projects</h2>
+          <label for="name">
+            Project's name: </label>
+            <input type="text" name="name" placeholder="Your Project's Name" id="name" />
+          <br />
+          <label for="language">
+            Coding Language:
+          </label>
+          <br />
+          <select name="language" id="language">
+            <option value="">Select the coding skill</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+          </select>
+          <br />
+          <label for="date"> Due Date:</label>
+          <br />
+          <input type="date" id="date" autocomplete="off" />
+          <br />
+          <label for="status">
+            Project Status:</label>
+          <br />
+          <select name="status" id="status">
+            <option value="">Select the status</option>
+            <option value="completed">Completed</option>
+            <option value="in-progress">In Progress</option>
+            <option value="on-hold">On Hold</option>
+          </select>
+          <br />
+          <input type="submit" id="submit-btn"/>
+        </form>
+        <div id="error-message"></div>
+      </aside>
+      <div id="projects-container">
+        <h2>List of Your Projects</h2>
+        <table id="table">
+          <tr>
+            <th>Project name</th>
+            <th>Language</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="./scripts.js"></script>
+  </body>
+</html>

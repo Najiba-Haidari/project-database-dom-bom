@@ -1,0 +1,119 @@
+
+ * {
+  /* color: white; */
+  /* background-color: rgb(57, 55, 55); */
+ }
+
+
+ header {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgb(137, 7, 7);
+}
+h1{
+  background-color: rgb(137, 7, 7);
+  color: white;
+}
+h2{
+  align-items: center;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#aside {
+  display: flex;
+flex-direction: column; 
+align-items: center; 
+width: 40%;
+  height: 50vh;
+  /* background-color: antiquewhite; */
+  padding-top: 30px;
+  
+}
+
+#project-form {
+ display: flex;
+ flex-direction: column;
+  width: 400px;
+  /* border: 1px solid black; */
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 15px 5px rgb(206, 204, 204);
+}
+
+#project-form label{
+  margin-left: 40px;
+}
+#project-form > input,
+#project-form > select,
+#project-form > h2 {
+  margin: 5px auto;
+  width: 80%;
+  padding: 5px;
+
+}
+
+form {
+  margin-left: 40px; /* Apply margin to form elements only */
+}
+
+#projects-container {
+  width: 55%;
+  height: 50vh;
+  /* background-color: azure; */
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+#submit-btn {
+  background-color: rgb(146, 208, 237);
+  color:black
+}
+
+#submit-btn:hover {
+  background-color: yellow;
+}
+
+#error-message{
+  background-color: rgba(235, 163, 166, 0.5);
+  width:300px;
+  text-align: center;
+  margin-top: 30px;
+  /* padding:10px;
+  border: 3px solid red; */
+}
+
+#table {
+  /* border: solid 1px black; */
+  width: 100%;
+  background-color: rgb(175, 176, 161);
+  text-align: left;
+  padding: 10px;
+  /* box-shadow: 5px 0px 15px 5px rgb(206, 204, 204); */
+}
+th{
+  background-color: rgb(137, 7, 7);
+  padding: 10px;
+  color: white;
+}
+tr, tr td{
+  background-color: rgb(248, 249, 246);
+  color: black;
+}
+
+@media screen and (max-width: 1100px) {
+  #main-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  #aside, #projects-container {
+      width: 100%; /* Take up full width on smaller screens */
+    margin-bottom: 100px;
+  }
+}
